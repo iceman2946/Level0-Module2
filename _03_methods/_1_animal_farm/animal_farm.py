@@ -1,3 +1,4 @@
+import sys
 import tkinter as tk
 from tkinter import simpledialog, Tk
 from PIL import Image, ImageTk
@@ -15,8 +16,22 @@ def animals():
     #  hear the animal they chose using one of the methods below.
 
     # TODO 2. Make it so that the user can keep entering new animals.
-
+    for i in range(10):
+        Animal=simpledialog.askstring('title','What animal do you want to see and hear?')
     # TODO 3. If the user enters 'exit', stop the program
+        if Animal=='exit':
+            sys.exit(0)
+        if Animal=='cow':
+            moo()
+        if Animal=='dog':
+            woof()
+        if Animal=='duck':
+            quack()
+        if Animal=='llama':
+            llama_scream()
+        if Animal=='cat':
+            meow()
+
 
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
